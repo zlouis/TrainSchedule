@@ -21,12 +21,12 @@ trainschedule.ref().on("child_added", function(childSnapshot, prevChildKey){
   var trainFirstTrain = childSnapshot.val().firstTrain;
 
   
-  // calculate the minutes till arriva///
+  // calculate the minutes till arrival time///
   var differenceTimes = moment().diff(moment.unix(trainFirstTrain), "minutes");
   var trainRemainder = moment().diff(moment.unix(trainFirstTrain), "minutes") % trainFrequency ;
   var trainMinutes = trainFrequency - trainRemainder;
 
-  //calculate the arrival time////
+  //calculate the arrival time of trains////
   var trainArrival = moment().add(trainMinutes, "m").format("hh:mm A"); 
   console.log(trainMinutes);
   console.log(trainArrival);
@@ -63,7 +63,7 @@ $("#addTrainBtn").on("click", function(){
   
   trainschedule.ref().push(newTrain);
 
-  // Logs to console
+  // show logs in console
   console.log(newTrain.name);
   console.log(newTrain.destination); 
   console.log(firstTrainInput);
@@ -71,7 +71,7 @@ $("#addTrainBtn").on("click", function(){
 
 
 
- /// reset input  values to empty
+ /// reset input  values to be empty
   $("#trainNameInput").val("");
   $("#destinationInput").val("");
   $("#firstTrainInput").val("");
