@@ -1,4 +1,9 @@
 # TrainSchedule
+###Update readme 11/30/16 - 
+Trainschedule app allows users to track train arrival and departure times. 
+
+###Technologies used
+jQuery, Firebase, HTML, CSS, moment.js
 
 This week's homework is to design a schedule based on trains using time converter and saving the results onto firebase. It was interesting to see how firebase works and able to save the data even after the page refreshes.
 
