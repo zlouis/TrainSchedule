@@ -2,6 +2,9 @@
 ###Update readme 11/30/16 - 
 Trainschedule app allows users to track train arrival and departure times. 
 
+###Getting Started###
+http://cryptic-wildwood-93464.herokuapp.com/
+
 ###Technologies used###
 * jQuery
 * Firebase
